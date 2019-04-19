@@ -1,0 +1,7 @@
+<div id="main" class="mr-2">
+    {{setupdata.dt_txt | date: 'mediumDate'}}<br />
+    <img src="http://openweathermap.org/img/w/{{setupdata.weather[0].icon}}.png"><br /> 
+   <b>{{setupdata.weather[0].description | titlecase}}</b><br />
+   Humidity: <b>{{setupdata.main.humidity}}%</b><br />  
+    <h3><b>{{setupdata.main.temp}}°C</b></h3>      
+</div>

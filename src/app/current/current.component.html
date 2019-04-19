@@ -1,0 +1,13 @@
+<div id="main" *ngIf="setupcurrentdata">
+    <img src="http://openweathermap.org/img/w/{{setupcurrentdata.weather[0].icon}}.png">
+    <span style="float:right;" >
+        <h3 style="padding-top: 40px; margin:0px"><b>{{setupcurrentdata.main.temp}}°C</b></h3> 
+        Min: <b>{{setupcurrentdata.main.temp}}°C</b><br>
+        Max: <b>{{setupcurrentdata.main.temp}}°C</b>
+</span> <br />    
+   <b>{{setupcurrentdata.weather[0].description | titlecase}}</b><br />
+   Humidity: <b>{{setupcurrentdata.main.humidity}}%</b><br /> 
+   Pressure: <b>{{setupcurrentdata.main.pressure}} HPA</b> 
+ 
+</div>
+
